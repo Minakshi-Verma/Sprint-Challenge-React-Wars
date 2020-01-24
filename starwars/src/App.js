@@ -7,10 +7,13 @@ import './App.css';
 const WrapperDiv = styled.div`
     width: 100%;
     height: 100%;
-    background-color: #ff0000;
-    padding-top: 3%;
+    background-color: #990000;
+    padding: 2%;
+    font-size: 1.2rem;
+    color: black;
+    // margin: 0 auto;
     
-    ;
+    
     
 `;
 

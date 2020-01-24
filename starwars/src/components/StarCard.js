@@ -5,30 +5,34 @@ import { Card, CardHeader, CardBody,
 import styled from "styled-components";
 
 const StCard = styled.div`
-  background: #33ccff;
+  background: #bfbfbf;
   color: black;
-  width: 200px;
-//   min-height:
-  display: flex;
-  flex-direction: column;
+//   width:100%;;
+//   height:30vh;
+    width:200px;;
+  height:280px;
+  display:flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  border-radius:20px;
-  margin: 40px;
-  flex-wrap: nowrap;
-  
+  justify-content: space-evenly;  
+  border-radius:5%;
+  margin: 20px;
+  padding: 10%;
+  flex-wrap: wrap;  
+  text-align: justify;
+
   
 `;
 
 const Stheader = styled.div`
-  background: black;
+  background: #003300;
   color:#e6f7ff;
   margin-bottom: 20px;
-  width: 200px;
+  width:100%;
   font-size: 1.5rem;
   border-radius:10px;
-`;
+  padding: 6%;
+  text-align: center;
+  `;
 
 
 const StarCard = (props) =>{
@@ -39,10 +43,10 @@ const StarCard = (props) =>{
                 <StCard>            
                 <Stheader><CardHeader>{props.name }</CardHeader></Stheader>
                 <CardBody>
-                    <CardText>Height: {props.height} </CardText>
-                    <CardText>Hair Color:{props.hairColor} </CardText>
-                    <CardText> Birth Year:{props.birthYear}</CardText>
-                    <CardText>Gender:{props.gender}</CardText>          
+                    <CardText><strong>Height:</strong> {props.height} </CardText>
+                    <CardText><strong>Hair Color:</strong> {props.hairColor} </CardText>
+                    <CardText><strong>Birth Year:</strong> {props.birthYear}</CardText>
+                    <CardText><strong>Gender:</strong> {props.gender}</CardText>          
                 </CardBody>
               </StCard>                  
             </Card> 

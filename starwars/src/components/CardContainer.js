@@ -6,11 +6,15 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-  background: black;
-  min-height: 400vh;  
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+    background: black;
+    width:43%;
+    min-height: 100vh;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:5%;
 
  `;
 
