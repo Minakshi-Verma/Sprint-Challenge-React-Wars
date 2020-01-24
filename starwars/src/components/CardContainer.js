@@ -10,7 +10,7 @@ const CardContainer = (props) =>{
     
     return(
         <div>
-            {/* {newArray.map(character =>(
+            {newArray.map(character =>(
 
                 <Card 
                 key = {character.name}
@@ -20,7 +20,7 @@ const CardContainer = (props) =>{
                 birthYear ={character.birth_year}
                 gender ={character.gender}
                 />
-            ))} */}
+            ))}
            
         </div>
 
