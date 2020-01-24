@@ -8,13 +8,17 @@ const StCard = styled.div`
   background: #33ccff;
   color: black;
   width: 200px;
-  max-height: 500px;
+//   min-height:
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   justify-content: space-between;
   margin-bottom: 20px;
+  border-radius:20px;
+  margin: 40px;
+  flex-wrap: nowrap;
+  
+  
 `;
 
 const Stheader = styled.div`
@@ -23,22 +27,16 @@ const Stheader = styled.div`
   margin-bottom: 20px;
   width: 200px;
   font-size: 1.5rem;
+  border-radius:10px;
 `;
 
 
-
-
-
 const StarCard = (props) =>{
-    
-    
-    
-    return(
-        
-        
+       
+        return(           
        
             <Card>
-            <StCard>
+                <StCard>            
                 <Stheader><CardHeader>{props.name }</CardHeader></Stheader>
                 <CardBody>
                     <CardText>Height: {props.height} </CardText>
@@ -46,22 +44,8 @@ const StarCard = (props) =>{
                     <CardText> Birth Year:{props.birthYear}</CardText>
                     <CardText>Gender:{props.gender}</CardText>          
                 </CardBody>
-            
-            </StCard>       
-            </Card>
-        
-
-
-
-
-            // {/* <h1>Name: {props.name }</h1>
-            // <p>Height: {props.height} </p>
-            // <p>Hair Color:{props.hairColor} </p>
-            // <p>Birth Year:{props.birthYear}</p>
-            // <p>Gender:{props.gender}</p> */}
-
-
-
+              </StCard>                  
+            </Card> 
     )
 }
 

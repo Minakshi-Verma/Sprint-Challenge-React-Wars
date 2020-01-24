@@ -4,6 +4,15 @@ import CardContainer from "./components/CardContainer";
 import styled from "styled-components";
 import './App.css';
 
+const WrapperDiv = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000;
+    padding-top: 3%;
+    
+    ;
+    
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -28,10 +37,10 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
+    <WrapperDiv className="App">
       <h1 className="Header">React Wars</h1>
       <CardContainer data = {characters}/>
-    </div>
+    </WrapperDiv>
   );
 }
 
