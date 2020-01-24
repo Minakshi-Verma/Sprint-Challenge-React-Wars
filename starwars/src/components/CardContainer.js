@@ -1,8 +1,13 @@
 import React from 'react';
 import Card from "./StarCard";
-import { Container, Row } from "reactstrap";
+import {Container, Row, Col} from "reactstrap";
 
 import styled from "styled-components";
+
+
+
+
+
 
 
 const CardContainer = (props) =>{
