@@ -11,10 +11,7 @@ const WrapperDiv = styled.div`
     padding: 2%;
     font-size: 1.2rem;
     color: black;
-    // margin: 0 auto;
-    
-    
-    
+    // margin: 0 auto;     
 `;
 
 const App = () => {

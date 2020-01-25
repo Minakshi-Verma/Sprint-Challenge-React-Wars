@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from "./StarCard";
+import StarCard from "./StarCard";
 
 
 import styled from "styled-components";
@@ -25,11 +25,10 @@ const CardContainer = (props) =>{
     
     return(
 
-        <Container>
-        
+        <Container>        
             {props.characters.map(character =>(
 
-            <Card 
+            <StarCard 
             key = {character.name}
             name ={character.name}
             height ={character.height}
