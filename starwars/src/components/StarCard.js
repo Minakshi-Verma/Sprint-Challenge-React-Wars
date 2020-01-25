@@ -7,9 +7,10 @@ import styled from "styled-components";
 const StCard = styled.div`
   background: #bfbfbf;
   color: black;
+  font-size: 1.1rem;
 //   width:100%;; height in vh and width in % causing issue in using flexwrap. So, use px units.
 //   height:30vh;
-  width:200px;;
+  width:240px;;
   height:280px;
   display:flex;
   align-items: center;
@@ -43,10 +44,10 @@ const StarCard = (props) =>{
                 <StCard>            
                 <Stheader><CardHeader>{props.name }</CardHeader></Stheader>
                 <CardBody>
-                    <CardText><strong>Height:</strong> {props.height} </CardText>
-                    <CardText><strong>Hair Color:</strong> {props.hairColor} </CardText>
-                    <CardText><strong>Birth Year:</strong> {props.birthYear}</CardText>
-                    <CardText><strong>Gender:</strong> {props.gender}</CardText>          
+                    <CardText><strong>Height:</strong><small> {props.height}</small> </CardText>
+                    <CardText><strong>Hair Color:</strong><small> {props.hairColor}</small> </CardText>
+                    <CardText><strong>Birth Year:</strong><small> {props.birthYear}</small></CardText>
+                    <CardText><strong>Gender:</strong><small> {props.gender}</small></CardText>          
                 </CardBody>
               </StCard>                  
             </Card> 

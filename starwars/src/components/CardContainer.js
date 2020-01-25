@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
     background: black;
-    width:43%;
+    width:80%;
     min-height: 100vh;  
     display: flex;
     justify-content: space-between;
