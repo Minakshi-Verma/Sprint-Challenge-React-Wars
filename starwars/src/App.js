@@ -22,6 +22,7 @@ const App = () => {
   // the state properties here.
 
   const [characters, setCharacters] = useState([])
+  // in useState you need to put [] inside the (), since you know you are getting array here and that array you have to map over.
 
    // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
@@ -42,7 +43,8 @@ const App = () => {
   return (
     <WrapperDiv className="App">
       <h1 className="Header">React Wars</h1>
-      <CardContainer data = {characters}/>
+      <CardContainer characters = {characters}/>
+      {/* you can use: data = {characters} if same name confuses you! And then data would be passed as props */}
     </WrapperDiv>
   );
 }

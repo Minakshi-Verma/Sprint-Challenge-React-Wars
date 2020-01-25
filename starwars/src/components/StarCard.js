@@ -7,16 +7,16 @@ import styled from "styled-components";
 const StCard = styled.div`
   background: #bfbfbf;
   color: black;
-//   width:100%;;
+//   width:100%;; height in vh and width in % causing issue in using flexwrap. So, use px units.
 //   height:30vh;
-    width:200px;;
+  width:200px;;
   height:280px;
   display:flex;
   align-items: center;
   justify-content: space-evenly;  
   border-radius:5%;
-  margin: 20px;
-  padding: 10%;
+  margin: 20px 20px 20px 0;
+//   padding: 10% 1% 1% 10%;
   flex-wrap: wrap;  
   text-align: justify;
 

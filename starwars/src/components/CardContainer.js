@@ -27,7 +27,7 @@ const CardContainer = (props) =>{
 
         <Container>
         
-            {props.data.map(character =>(
+            {props.characters.map(character =>(
 
             <Card 
             key = {character.name}
