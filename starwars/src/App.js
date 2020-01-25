@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <WrapperDiv className="App">
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header, h1:hover">React Wars</h1>
       <CardContainer characters = {characters}/>
       {/* you can use: data = {characters} if same name confuses you! And then data would be passed as props */}
     </WrapperDiv>
